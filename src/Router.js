@@ -16,11 +16,11 @@ const routes =[
     //     name: 'book',
     //     component: () => import('./components/Book.vue'),
     // },
-    // {
-    //     path:'/Search',
-    //     name: 'search',
-    //     component: () => import('./components/Search.vue'),	
-    // }
+    {
+        path:'/Search',
+        name: 'search',
+        component: () => import('./components/Search.vue'),	
+    }
 
 ];
 const router = createRouter({
