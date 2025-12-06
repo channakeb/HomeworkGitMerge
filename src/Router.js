@@ -11,11 +11,11 @@ const routes =[
         name: 'about',
         component: () => import('./components/About.vue'),
     },
-    // {
-    //     path:'/book',
-    //     name: 'book',
-    //     component: () => import('./components/Book.vue'),
-    // },
+    {
+        path:'/book',
+        name: 'book',
+        component: () => import('./components/Book.vue'),
+    },
     {
         path:'/Search',
         name: 'search',
