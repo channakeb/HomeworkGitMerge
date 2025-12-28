@@ -1,0 +1,1 @@
+import{_ as r}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{c as o,b as t,o as n}from"./index-BLctiSbG.js";const c={};function s(a,e){return n(),o("div",null,e[0]||(e[0]=[t("h1",null,"SEARCH PAGE",-1)]))}const _=r(c,[["render",s]]);export{_ as default};
