@@ -75,7 +75,7 @@
             <span>Chechout</span>
             <svg class="h-5 w-5 mx-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
         </a>
-    </div> -->
+    </div> 
     <main class="my-8">
         <div class="container mx-auto px-6">
             <h3 class="text-gray-700 text-2xl font-medium">Wrist Watch</h3>
