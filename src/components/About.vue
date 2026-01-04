@@ -31,7 +31,8 @@
             <span class="text-2xl font-semibold text-green-600">$19.99</span>
 
             <button
-              class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+            
+              class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition" 
             >
               Add to Cart
             </button>
