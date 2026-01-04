@@ -2,28 +2,33 @@ name: Node.js CI/CD (FTP Deploy)
 
 on:
   push:
-    branches: [master]
+    branches: [master]  # Change to 'main' if your default branch is main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
+      # 1. Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # 2. Set up Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
           cache: 'npm'
 
+      # 3. Install dependencies
       - name: Install dependencies
         run: npm install
 
+      # 4. Build the project
       - name: Build project
         run: npm run build
 
+      # 5. Deploy to FTP
       - name: Deploy to FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -32,3 +37,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: dist/
           server-dir: htdocs/
+          # protocol: sftp  # Uncomment if using SFTP instead of FTP
