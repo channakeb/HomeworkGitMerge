@@ -25,7 +25,7 @@ jobs:
         run: npm install
 
       # 4. Build the project
-      - name: Build project
+      - name: Build project 
         run: npm run build
 
       # 5. Deploy to FTP
@@ -35,6 +35,6 @@ jobs:
       #     server: ${{ secrets.FTP_SERVER }}
       #     username: ${{ secrets.FTP_USERNAME }}
       #     password: ${{ secrets.FTP_PASSWORD }}
-      #     local-dir: dist/
-      #     server-dir: htdocs/
+      #     local-dir: ./dist/
+      #     server-dir: ./htdocs/
           # protocol: sftp  # Uncomment if using SFTP instead of FTP
